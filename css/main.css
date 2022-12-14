@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    width: 900px;
+    height: 100%;
+}
+
+
+
+
+.header {
+    z-index: 1;
+    position: fixed;
+    margin-top: 10px;
+    width: 100%;
+
+}
+
+.header .logo {
+    position: absolute;
+    top: 0px;
+    left: -20px;
+}
+
+.header ul{
+    list-style: none;
+    margin-left: 20px;
+}
+.header ul li {
+ font-size: 18px;
+}
+
+.navbar {
+    margin-top: -10px;
+    left: 200px;
+    background-color: rgb(243, 240, 240);
+}
+
+.header .navbar {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.header .navbar ul {
+    display: flex;
+    list-style: none; 
+}
+
+.header .navbar ul li {
+    padding: 15px;
+    
+}
+
+/* se a tela for menor que 295pixels, elimina o header */
+@media only screen and (max-width: 295px) {
+     
+    .header {
+        display: none;
+        
+    }
+
+}
+
+.bodie {
+    position: absolute;
+    display: flex;
+    width: 980px;
+    
+    min-height: 100%;
+    left: 30%;
+    
+}
+
+
+
+.bodie .stories {
+    position: relative;
+    top: 66px;
+    left: 20%;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid rgb(221, 216, 216);
+    border-radius: 4px;
+}
+
+.bodie .stories .users {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.bodie .stories .users button {
+    border: none;
+    background-color: #fff;
+}
+
+.bodie .stories .users img {
+    width: 90px;
+}
+
+
+
+.posts {
+    position: absolute;
+    top: 230px;
+    left: 15%;
+}
+
+.posts .post-bodie {
+    margin-bottom: 30px;
+    max-height: 800px;
+    padding-bottom: 60px;
+}
+
+
+
+.posts .post-bodie .post-img img {
+    position: relative;
+    height: 557px;
+}
+
+.posts .post-bodie .post-namer button {
+    display: flex;
+    border: none;
+    background-color: #fff;
+    flex-direction: row;
+    text-align: justify;
+    align-items: flex-end;
+    
+}
+
+.posts .post-bodie .post-namer img {
+    width: 38px;
+    
+}
+
+
+
+.posts .post-bodie .post-namer span {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.posts .post-bodie .btn-inter {
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.posts .post-bodie .btn-inter button {
+    border: none;
+    background-color: #fff;
+    margin-left: 20px;
+} 
+
+.posts .post-bodie .btn-inter img {
+    width: 28px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+.bodie .footer{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 900px;
+    border: 1px solid rgb(243, 240, 240);
+    background-color: rgb(243, 240, 240);
+}
+
+
+.bodie .footer button{
+    border: none;
+    background-color: rgb(243, 240, 240);
+    padding: 20px;
+}
+
+
+.bodie .footer img{
+    width: 22px;
+}
